@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-size: cover;
+    /* background-position: center center; */
+}
+a{
+    font-size: 16px;
+    margin: 10px 10px;
+
+}
+.nav-area{
+    background-color: #813588;
+    height: auto;
+    
+    
+
+}
+.nav-area:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.nav-area ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 10px;
+    
+
+}
+.nav-area li:hover{
+    text-decoration: underline;
+}
+.nav-area>ul>li{
+    float: left;
+    position: relative;
+    
+
+}
+.nav-area ul li a{
+    text-decoration: none;
+    color: #ffc846;
+    padding: 15px 20px;
+    display: block;
+
+}
+.nav-area ul li:hover a{
+    background: transparent;
+
+}
+.nav-area ul ul {
+    position: absolute;
+    padding: o;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+.nav-area ul li:hover >ul{
+    display: block;
+}
+/* .nav-area ul ul li:hover a{
+    background:white ;
+} */
+.nav-area ul ul ul li:hover a{
+    background: #601966;
+    opacity: 1;
+    border: 1px solid rgb(1, 1, 47);
+ }
+ .nav-area ul ul li:hover a{
+    background: #601966;
+    opacity: 0.8;
+    border: 1px solid rgb(1, 1, 47);
+}
+.nav-area ul ul li{
+    position: relative;
+}
+.nav-area ul ul ul {
+    top: 0;
+    left: 100%;
+
+}
+/* .nav-area ul ul ul li:hover a{
+   background: white;
+} */
+.headerimage{
+    width: 150px;
+    height: auto;
+    margin: -10px 20px 20px 40px;
+}
+.asd{
+    text-align: center;
+    padding-top: 50px;
+} 
+
+.header-list{
+    background-color:#813588;
+    color:#ffc846;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
+    border:2px solid #ffc846;
+}
+button{
+    border:2px solid #ffc846;
+    background-color:#813588;
+    color:#ffc846;
+    padding: 10px 15px 10px 15px;
+    border-radius: 7px;
+    margin-top:12px;
+}
+.header-phone,.header-search{
+    background-color: #ffc846;
+    margin: 23px;
+    border: 5px solid #ffc846;
+        border-radius: 50%;
+}  
+@media screen and (min-width:769px) and (max-width:1025px){
+    .nav-area ul li a{
+        text-decoration: none;
+        color: #ffc846;
+        padding: 10px 5px;
+        display: block;
+    
+    } 
+    .headerimage{
+        width: 70px;
+        height: auto;
+        margin: 0px 10px 10px 20px;
+    }  
+}
+
+@media screen and (min-width:426px) and (max-width:769px){
+    a{
+        font-size: 10px;
+        margin: 10px 0px;
+    
+    }
+    .headerimage{
+        width: 70px;
+        height: auto;
+        margin: 0px 10px 10px 20px;
+    }
+    .nav-area ul li a{
+        text-decoration: none;
+        color: #ffc846;
+        padding: 10px 12px;
+        display: block;
+    
+    }
+    button{
+        border:2px solid #ffc846;
+        background-color:#813588;
+        color:#ffc846;
+        padding: 5px 5px 5px 5px;
+        border-radius: 7px;
+        margin-top:10px;
+    }
+    .header-phone,.header-search{
+        background-color: #ffc846;
+        margin: 15px;
+        border: 5px solid #ffc846;
+        border-radius: 50%;
+    }
+
+
+}
+
+
+@media screen and (max-width:426px){
+    .nav-area{
+        width: 710px;
+    }
+    .nav-area ul li{
+        display: block;
+        width:max-content;
+        margin-right:250px ;
+
+        
+    }
+    li{
+        display: block;
+    }
+    ul>li>.headerimage{
+        display: block;
+        width:max-content;
+        margin: 10px 20px 20px 150px;
+        height: 30px;
+    }
+    button{
+        border:2px solid #ffc846;
+        background-color:#813588;
+        color:#ffc846;
+        padding: 10px 15px 10px 15px;
+        border-radius: 7px;
+        margin:12px 0px 12px 30px;
+    }
+    .header-phone{
+        background-color: #ffc846;
+        margin: 23px 0px 20px 0px;
+        border: 5px solid #ffc846;
+        border-radius: 50%;
+    }
+    .header-search{
+        display: none;
+    }
+    .nav-area ul ul ul li:hover a{
+        background: #601966;
+        opacity: 0.5;
+        border: 1px solid rgb(1, 1, 47);
+     }
+     .nav-area ul ul li:hover a{
+        background: #601966;
+        opacity: 0.5;
+        border: 1px solid rgb(1, 1, 47);
+    }
+     .nav-area ul li:hover >ul{
+        display: block;
+        margin-left: 250px;
+        margin-right: -850px;
+
+    }
+
+}
